@@ -1,0 +1,38 @@
+.img-effect {
+  position: relative;
+  img {
+    height: 16rem;
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 2rem 1rem rgba($color-black, 0.15);
+  }
+  &:hover img:not(:hover) {
+    transform: scale(0.95);
+  }
+}
+
+.img {
+  &.nat2,
+  &.nat3,
+  &.nat4 {
+    outline-offset: 2rem;
+    transition: all 0.4s;
+
+    &:hover {
+      z-index: 2;
+      transform: scale(1.05) translateY(-0.5rem);
+      outline: 10px solid $color-primary;
+      box-shadow: 0 4rem 1rem rgba($color-black, 0.35);
+    }
+  }
+  &.nat3 {
+    top: 5rem;
+    left: 20rem;
+    transition: all 0.4s;
+  }
+  &.nat4 {
+    top: 10rem;
+    left: 10rem;
+    transition: all 0.4s;
+  }
+}

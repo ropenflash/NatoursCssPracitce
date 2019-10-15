@@ -51,3 +51,29 @@
     animation-fill-mode: backwards;
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 0.3rem;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+    border: none;
+    box-shadow: 0px 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-0.2rem);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0px 0.5rem 1rem rgba($color-black, 0.15);
+  }
+}

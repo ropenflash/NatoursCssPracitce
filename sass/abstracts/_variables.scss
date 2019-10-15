@@ -1,6 +1,19 @@
+//Colors
 $color-primary-light: #856fd5;
+$color-primary: #4e50b3;
 $color-primary-dark: #4d28b4;
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
-$color-primary: #55c57a;
+$color-grey-light-1: #f7f7f7;
+
+//font
+$default-font-size: 1.6rem;
+
+//grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+$column-width1of2: calc((100% - #{$gutter-horizontal}) / 2);
+$column-width1of3: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+$column-width1of4: calc((100% - 3 * #{$gutter-horizontal}) / 4);
